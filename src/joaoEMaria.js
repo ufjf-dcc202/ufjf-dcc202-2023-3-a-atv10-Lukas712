@@ -34,6 +34,15 @@ function setMaria(novoValor) {
     }
 }
 
+function deJoaoParaMaria() {
+    maria+=joao;
+    joao = 0;
+}
+function deMariaParaJoao()
+{
+    joao+=maria;
+    maria = 0;
+}
 
-
-export {getJoao, getMaria, setJoao, setMaria}
+export {getJoao, getMaria, setJoao, setMaria, deJoaoParaMaria, deMariaParaJoao}
+//Eu tive alguns problemas com o vitest e o palywright, também estava tendo problemas em debugar o código, por isso os envios foram bem picotados.
